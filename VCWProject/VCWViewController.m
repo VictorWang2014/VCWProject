@@ -7,17 +7,53 @@
 //
 
 #import "VCWViewController.h"
+#import "VCWTranslateSuperViewController.h"
+#import "VCWRefreshViewController.h"
 
 @interface VCWViewController ()
 
 @end
 
 @implementation VCWViewController
+{
+    NSArray *_dataArray;
+}
+
+@synthesize mainTableView = _mainTableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _dataArray = @[@"TranslationViewController", @"RefreshTableViewController"];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customtableviewcell"];
+    cell.textLabel.text = _dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    VCWTranslateSuperViewController *translateSuperViewController = [[VCWTranslateSuperViewController alloc] init];
+    VCWRefreshViewController *refreshViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"refreshviewcontroller"];
+    switch (indexPath.row) {
+        case 0:
+            [self presentViewController:translateSuperViewController animated:YES completion:nil];
+            break;
+        case 1:
+            [self.navigationController pushViewController:refreshViewController animated:YES];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning

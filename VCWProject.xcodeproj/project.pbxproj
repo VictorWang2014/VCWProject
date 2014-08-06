@@ -21,6 +21,14 @@
 		96A5BE1A1992699B00D40EE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5BDFC1992699B00D40EE9 /* UIKit.framework */; };
 		96A5BE221992699B00D40EE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96A5BE201992699B00D40EE9 /* InfoPlist.strings */; };
 		96A5BE241992699B00D40EE9 /* VCWProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE231992699B00D40EE9 /* VCWProjectTests.m */; };
+		96A5BE3119926AC300D40EE9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE3019926AC300D40EE9 /* Utils.m */; };
+		96A5BE3A19926C4D00D40EE9 /* VCWTranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE3919926C4D00D40EE9 /* VCWTranslationViewController.m */; };
+		96A5BE3D19926FAE00D40EE9 /* VCWTranslateSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE3C19926FAE00D40EE9 /* VCWTranslateSuperViewController.m */; };
+		96A5BE481992751900D40EE9 /* VCWRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE431992751900D40EE9 /* VCWRefreshBaseView.m */; };
+		96A5BE491992751900D40EE9 /* VCWRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE451992751900D40EE9 /* VCWRefreshFooterView.m */; };
+		96A5BE4A1992751900D40EE9 /* VCWRefreshHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE471992751900D40EE9 /* VCWRefreshHeadView.m */; };
+		96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */; };
+		96A5BE511992786D00D40EE9 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A5BE501992786D00D40EE9 /* arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,22 @@
 		96A5BE1F1992699B00D40EE9 /* VCWProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCWProjectTests-Info.plist"; sourceTree = "<group>"; };
 		96A5BE211992699B00D40EE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96A5BE231992699B00D40EE9 /* VCWProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCWProjectTests.m; sourceTree = "<group>"; };
+		96A5BE2F19926AC300D40EE9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		96A5BE3019926AC300D40EE9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		96A5BE3819926C4D00D40EE9 /* VCWTranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWTranslationViewController.h; sourceTree = "<group>"; };
+		96A5BE3919926C4D00D40EE9 /* VCWTranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWTranslationViewController.m; sourceTree = "<group>"; };
+		96A5BE3B19926FAE00D40EE9 /* VCWTranslateSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWTranslateSuperViewController.h; sourceTree = "<group>"; };
+		96A5BE3C19926FAE00D40EE9 /* VCWTranslateSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWTranslateSuperViewController.m; sourceTree = "<group>"; };
+		96A5BE3F1992750D00D40EE9 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		96A5BE421992751900D40EE9 /* VCWRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshBaseView.h; sourceTree = "<group>"; };
+		96A5BE431992751900D40EE9 /* VCWRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshBaseView.m; sourceTree = "<group>"; };
+		96A5BE441992751900D40EE9 /* VCWRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshFooterView.h; sourceTree = "<group>"; };
+		96A5BE451992751900D40EE9 /* VCWRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshFooterView.m; sourceTree = "<group>"; };
+		96A5BE461992751900D40EE9 /* VCWRefreshHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshHeadView.h; sourceTree = "<group>"; };
+		96A5BE471992751900D40EE9 /* VCWRefreshHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshHeadView.m; sourceTree = "<group>"; };
+		96A5BE4C1992756C00D40EE9 /* VCWRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshViewController.h; sourceTree = "<group>"; };
+		96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshViewController.m; sourceTree = "<group>"; };
+		96A5BE501992786D00D40EE9 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +136,8 @@
 		96A5BDFE1992699B00D40EE9 /* VCWProject */ = {
 			isa = PBXGroup;
 			children = (
+				96A5BE4F1992786D00D40EE9 /* VCWResource */,
+				96A5BE2D19926AC300D40EE9 /* VCWSource */,
 				96A5BE071992699B00D40EE9 /* VCWAppDelegate.h */,
 				96A5BE081992699B00D40EE9 /* VCWAppDelegate.m */,
 				96A5BE0A1992699B00D40EE9 /* Main.storyboard */,
@@ -150,6 +176,92 @@
 				96A5BE201992699B00D40EE9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A5BE2D19926AC300D40EE9 /* VCWSource */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE401992751900D40EE9 /* VCWCustomView */,
+				96A5BE3E1992750D00D40EE9 /* Include */,
+				96A5BE3619926C4D00D40EE9 /* VCWViewController */,
+				96A5BE2E19926AC300D40EE9 /* Util */,
+			);
+			path = VCWSource;
+			sourceTree = "<group>";
+		};
+		96A5BE2E19926AC300D40EE9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE2F19926AC300D40EE9 /* Utils.h */,
+				96A5BE3019926AC300D40EE9 /* Utils.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		96A5BE3619926C4D00D40EE9 /* VCWViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE4B1992755700D40EE9 /* VCWRefreshViewController */,
+				96A5BE3719926C4D00D40EE9 /* VCWTranslationViewController */,
+			);
+			path = VCWViewController;
+			sourceTree = "<group>";
+		};
+		96A5BE3719926C4D00D40EE9 /* VCWTranslationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE3819926C4D00D40EE9 /* VCWTranslationViewController.h */,
+				96A5BE3919926C4D00D40EE9 /* VCWTranslationViewController.m */,
+				96A5BE3B19926FAE00D40EE9 /* VCWTranslateSuperViewController.h */,
+				96A5BE3C19926FAE00D40EE9 /* VCWTranslateSuperViewController.m */,
+			);
+			path = VCWTranslationViewController;
+			sourceTree = "<group>";
+		};
+		96A5BE3E1992750D00D40EE9 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE3F1992750D00D40EE9 /* CommonDefine.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		96A5BE401992751900D40EE9 /* VCWCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE411992751900D40EE9 /* VCWRefreshView */,
+			);
+			path = VCWCustomView;
+			sourceTree = "<group>";
+		};
+		96A5BE411992751900D40EE9 /* VCWRefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE421992751900D40EE9 /* VCWRefreshBaseView.h */,
+				96A5BE431992751900D40EE9 /* VCWRefreshBaseView.m */,
+				96A5BE441992751900D40EE9 /* VCWRefreshFooterView.h */,
+				96A5BE451992751900D40EE9 /* VCWRefreshFooterView.m */,
+				96A5BE461992751900D40EE9 /* VCWRefreshHeadView.h */,
+				96A5BE471992751900D40EE9 /* VCWRefreshHeadView.m */,
+			);
+			path = VCWRefreshView;
+			sourceTree = "<group>";
+		};
+		96A5BE4B1992755700D40EE9 /* VCWRefreshViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE4C1992756C00D40EE9 /* VCWRefreshViewController.h */,
+				96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */,
+			);
+			path = VCWRefreshViewController;
+			sourceTree = "<group>";
+		};
+		96A5BE4F1992786D00D40EE9 /* VCWResource */ = {
+			isa = PBXGroup;
+			children = (
+				96A5BE501992786D00D40EE9 /* arrow@2x.png */,
+			);
+			path = VCWResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A5BE511992786D00D40EE9 /* arrow@2x.png in Resources */,
 				96A5BE111992699B00D40EE9 /* Images.xcassets in Resources */,
 				96A5BE031992699B00D40EE9 /* InfoPlist.strings in Resources */,
 				96A5BE0C1992699B00D40EE9 /* Main.storyboard in Resources */,
@@ -252,7 +365,14 @@
 			files = (
 				96A5BE051992699B00D40EE9 /* main.m in Sources */,
 				96A5BE0F1992699B00D40EE9 /* VCWViewController.m in Sources */,
+				96A5BE491992751900D40EE9 /* VCWRefreshFooterView.m in Sources */,
+				96A5BE3A19926C4D00D40EE9 /* VCWTranslationViewController.m in Sources */,
 				96A5BE091992699B00D40EE9 /* VCWAppDelegate.m in Sources */,
+				96A5BE481992751900D40EE9 /* VCWRefreshBaseView.m in Sources */,
+				96A5BE3D19926FAE00D40EE9 /* VCWTranslateSuperViewController.m in Sources */,
+				96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */,
+				96A5BE3119926AC300D40EE9 /* Utils.m in Sources */,
+				96A5BE4A1992751900D40EE9 /* VCWRefreshHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VCWViewController : UIViewController
+@interface VCWViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end
