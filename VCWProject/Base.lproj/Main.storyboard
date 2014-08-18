@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HN8-w5-os4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="HN8-w5-os4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -42,7 +42,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="719"/>
+            <point key="canvasLocation" x="391" y="275"/>
+        </scene>
+        <!--Hit Event Transfer View Controller-->
+        <scene sceneID="chq-hu-Goi">
+            <objects>
+                <viewController storyboardIdentifier="hiteventtransferviewcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i2o-jU-uvn" customClass="VCWHitEventTransferViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7L-y4-IHF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v5P-jJ-X6A">
+                                <rect key="frame" x="0.0" y="175" width="79" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" id="Yy0-Jg-nJD" customClass="CustomScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nwa-Cg-S7e">
+                                        <rect key="frame" x="120" y="133" width="80" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.88296513502225094" green="1" blue="0.58644541575247233" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button2">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.722965199060705" blue="0.80805477965060146" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="6Hc-mv-5JK"/>
+                    <connections>
+                        <outlet property="insideButton" destination="nwa-Cg-S7e" id="slB-7i-7Hf"/>
+                        <outlet property="outsideButton" destination="v5P-jJ-X6A" id="cAJ-lI-jbL"/>
+                        <outlet property="scrollView" destination="Yy0-Jg-nJD" id="Sj7-d1-pDO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bch-aY-bIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="526"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TPF-Uz-DyA">
@@ -61,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmT-VD-Hlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="719"/>
+            <point key="canvasLocation" x="-127" y="275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ATJ-jv-U0d">
@@ -80,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTj-JP-zwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="1155"/>
+            <point key="canvasLocation" x="-127" y="969"/>
         </scene>
         <!--Refresh View Controller-->
         <scene sceneID="O4A-cI-g8O">
@@ -120,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUE-m5-zWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="1154"/>
+            <point key="canvasLocation" x="391" y="969"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VCWProject/VCWSource/VCWViewController/VCWTranslationViewController/VCWTranslateSuperViewController.m"
-            timestampString = "429027990.26704"
+            filePath = "VCWProject/VCWSource/VCWViewController/VCWHitTestTransferViewController/VCWHitEventTransferViewController.m"
+            timestampString = "430020214.852891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VCWProject/VCWSource/Util/Utils.m"
-            timestampString = "429028021.561184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "+createDefaultButtonWithView:AndSelectorBlock:"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "-pointInside:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

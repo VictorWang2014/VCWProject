@@ -9,6 +9,7 @@
 #import "VCWViewController.h"
 #import "VCWTranslateSuperViewController.h"
 #import "VCWRefreshViewController.h"
+#import "VCWHitEventTransferViewController.h"
 
 @interface VCWViewController ()
 
@@ -24,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _dataArray = @[@"TranslationViewController", @"RefreshTableViewController"];
+    _dataArray = @[@"TranslationViewController", @"RefreshTableViewController", @"HitEventTransferViewController"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -44,12 +45,16 @@
 {
     VCWTranslateSuperViewController *translateSuperViewController = [[VCWTranslateSuperViewController alloc] init];
     VCWRefreshViewController *refreshViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"refreshviewcontroller"];
+    VCWHitEventTransferViewController *hitEventTransferViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"hiteventtransferviewcontroller"];
     switch (indexPath.row) {
         case 0:
             [self presentViewController:translateSuperViewController animated:YES completion:nil];
             break;
         case 1:
             [self.navigationController pushViewController:refreshViewController animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:hitEventTransferViewController animated:YES];
             break;
         default:
             break;

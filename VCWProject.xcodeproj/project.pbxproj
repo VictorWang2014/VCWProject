@@ -29,6 +29,7 @@
 		96A5BE4A1992751900D40EE9 /* VCWRefreshHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE471992751900D40EE9 /* VCWRefreshHeadView.m */; };
 		96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */; };
 		96A5BE511992786D00D40EE9 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A5BE501992786D00D40EE9 /* arrow@2x.png */; };
+		96B064DE19A18F970001D144 /* VCWHitEventTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		96A5BE4C1992756C00D40EE9 /* VCWRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshViewController.h; sourceTree = "<group>"; };
 		96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshViewController.m; sourceTree = "<group>"; };
 		96A5BE501992786D00D40EE9 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		96B064DC19A18F970001D144 /* VCWHitEventTransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCWHitEventTransferViewController.h; path = VCWHitTestTransferViewController/VCWHitEventTransferViewController.h; sourceTree = "<group>"; };
+		96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCWHitEventTransferViewController.m; path = VCWHitTestTransferViewController/VCWHitEventTransferViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,7 @@
 		96A5BE3619926C4D00D40EE9 /* VCWViewController */ = {
 			isa = PBXGroup;
 			children = (
+				96B064DB19A18F230001D144 /* VCWHitEventTransferViewController */,
 				96A5BE4B1992755700D40EE9 /* VCWRefreshViewController */,
 				96A5BE3719926C4D00D40EE9 /* VCWTranslationViewController */,
 			);
@@ -262,6 +266,15 @@
 				96A5BE501992786D00D40EE9 /* arrow@2x.png */,
 			);
 			path = VCWResource;
+			sourceTree = "<group>";
+		};
+		96B064DB19A18F230001D144 /* VCWHitEventTransferViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96B064DC19A18F970001D144 /* VCWHitEventTransferViewController.h */,
+				96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */,
+			);
+			name = VCWHitEventTransferViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +381,7 @@
 				96A5BE491992751900D40EE9 /* VCWRefreshFooterView.m in Sources */,
 				96A5BE3A19926C4D00D40EE9 /* VCWTranslationViewController.m in Sources */,
 				96A5BE091992699B00D40EE9 /* VCWAppDelegate.m in Sources */,
+				96B064DE19A18F970001D144 /* VCWHitEventTransferViewController.m in Sources */,
 				96A5BE481992751900D40EE9 /* VCWRefreshBaseView.m in Sources */,
 				96A5BE3D19926FAE00D40EE9 /* VCWTranslateSuperViewController.m in Sources */,
 				96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */,
@@ -577,6 +591,7 @@
 				96A5BE291992699B00D40EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96A5BE2A1992699B00D40EE9 /* Build configuration list for PBXNativeTarget "VCWProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +600,7 @@
 				96A5BE2C1992699B00D40EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
