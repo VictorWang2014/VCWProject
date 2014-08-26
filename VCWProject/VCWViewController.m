@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _dataArray = @[@"TranslationViewController", @"RefreshTableViewController", @"HitEventTransferViewController"];
+    _dataArray = @[@"TranslationViewController", @"RefreshTableViewController", @"HitEventTransferViewController", @"SinaWeiboViewController"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

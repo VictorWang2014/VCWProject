@@ -29,6 +29,8 @@
 		96A5BE4A1992751900D40EE9 /* VCWRefreshHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE471992751900D40EE9 /* VCWRefreshHeadView.m */; };
 		96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */; };
 		96A5BE511992786D00D40EE9 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A5BE501992786D00D40EE9 /* arrow@2x.png */; };
+		96AE171719AC8C2200D5A591 /* CMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AE171419AC8C2200D5A591 /* CMGridView.m */; };
+		96AE171819AC8C2200D5A591 /* CMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AE171619AC8C2200D5A591 /* CMGridViewCell.m */; };
 		96B064DE19A18F970001D144 /* VCWHitEventTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,10 @@
 		96A5BE4C1992756C00D40EE9 /* VCWRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCWRefreshViewController.h; sourceTree = "<group>"; };
 		96A5BE4D1992756C00D40EE9 /* VCWRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCWRefreshViewController.m; sourceTree = "<group>"; };
 		96A5BE501992786D00D40EE9 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		96AE171319AC8C2200D5A591 /* CMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGridView.h; sourceTree = "<group>"; };
+		96AE171419AC8C2200D5A591 /* CMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGridView.m; sourceTree = "<group>"; };
+		96AE171519AC8C2200D5A591 /* CMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGridViewCell.h; sourceTree = "<group>"; };
+		96AE171619AC8C2200D5A591 /* CMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMGridViewCell.m; sourceTree = "<group>"; };
 		96B064DC19A18F970001D144 /* VCWHitEventTransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCWHitEventTransferViewController.h; path = VCWHitTestTransferViewController/VCWHitEventTransferViewController.h; sourceTree = "<group>"; };
 		96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCWHitEventTransferViewController.m; path = VCWHitTestTransferViewController/VCWHitEventTransferViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +210,7 @@
 		96A5BE3619926C4D00D40EE9 /* VCWViewController */ = {
 			isa = PBXGroup;
 			children = (
+				96B064DF19A19E9C0001D144 /* VCWSinaWeiboViewController */,
 				96B064DB19A18F230001D144 /* VCWHitEventTransferViewController */,
 				96A5BE4B1992755700D40EE9 /* VCWRefreshViewController */,
 				96A5BE3719926C4D00D40EE9 /* VCWTranslationViewController */,
@@ -233,6 +240,7 @@
 		96A5BE401992751900D40EE9 /* VCWCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				96AE171219AC8C2200D5A591 /* CMGridView */,
 				96A5BE411992751900D40EE9 /* VCWRefreshView */,
 			);
 			path = VCWCustomView;
@@ -268,6 +276,17 @@
 			path = VCWResource;
 			sourceTree = "<group>";
 		};
+		96AE171219AC8C2200D5A591 /* CMGridView */ = {
+			isa = PBXGroup;
+			children = (
+				96AE171319AC8C2200D5A591 /* CMGridView.h */,
+				96AE171419AC8C2200D5A591 /* CMGridView.m */,
+				96AE171519AC8C2200D5A591 /* CMGridViewCell.h */,
+				96AE171619AC8C2200D5A591 /* CMGridViewCell.m */,
+			);
+			path = CMGridView;
+			sourceTree = "<group>";
+		};
 		96B064DB19A18F230001D144 /* VCWHitEventTransferViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +294,13 @@
 				96B064DD19A18F970001D144 /* VCWHitEventTransferViewController.m */,
 			);
 			name = VCWHitEventTransferViewController;
+			sourceTree = "<group>";
+		};
+		96B064DF19A19E9C0001D144 /* VCWSinaWeiboViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VCWSinaWeiboViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,8 +408,10 @@
 				96A5BE3A19926C4D00D40EE9 /* VCWTranslationViewController.m in Sources */,
 				96A5BE091992699B00D40EE9 /* VCWAppDelegate.m in Sources */,
 				96B064DE19A18F970001D144 /* VCWHitEventTransferViewController.m in Sources */,
+				96AE171819AC8C2200D5A591 /* CMGridViewCell.m in Sources */,
 				96A5BE481992751900D40EE9 /* VCWRefreshBaseView.m in Sources */,
 				96A5BE3D19926FAE00D40EE9 /* VCWTranslateSuperViewController.m in Sources */,
+				96AE171719AC8C2200D5A591 /* CMGridView.m in Sources */,
 				96A5BE4E1992756C00D40EE9 /* VCWRefreshViewController.m in Sources */,
 				96A5BE3119926AC300D40EE9 /* Utils.m in Sources */,
 				96A5BE4A1992751900D40EE9 /* VCWRefreshHeadView.m in Sources */,
