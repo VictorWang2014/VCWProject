@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class GridViewItemData;
+@class CMGridViewCell;
 
 @protocol GridViewCellDelegate <NSObject>
 
-- (void)gridViewCellDeSelectedWithData:(GridViewItemData *)data;
+- (void)gridViewCellDeSelected:(CMGridViewCell *)gridViewCell;
 
 @end
 
@@ -32,7 +33,7 @@
 @property (nonatomic, strong) id<GridViewCellDelegate>delegate;
 
 - (id)initWithFrame:(CGRect)frame WithData:(GridViewItemData *)data;
-- (void)gridViewCellReloadData;
+//- (void)gridViewCellReloadData;
 
 @end
 

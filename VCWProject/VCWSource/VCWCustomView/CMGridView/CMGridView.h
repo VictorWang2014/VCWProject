@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CMGridViewDelegate <NSObject>
+
+- (void)gridViewDeselectCellAtIndex:(NSInteger)index;
+
+@end
+
 @interface CMGridView : UIView
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) id<CMGridViewDelegate>delegate;
 
 - (id)initWithFrame:(CGRect)frame WithDataArray:(NSArray *)array;
 
